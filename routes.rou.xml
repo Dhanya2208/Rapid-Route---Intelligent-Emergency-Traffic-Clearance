@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes>
+
+    <!-- Vehicle Types -->
+    <vType id="car"
+           accel="2.6"
+           decel="4.5"
+           sigma="0.5"
+           length="5"
+           minGap="2.5"
+           maxSpeed="13.9"/>
+
+    <vType id="ambulance"
+           accel="3.5"
+           decel="5.0"
+           sigma="0"
+           length="6"
+           minGap="1.0"
+           maxSpeed="25.0"
+           priority="10"
+           vClass="emergency"
+           guiShape="emergency"
+           color="1,0,0"/>
+
+    <!-- ROUTE (Replace E3 E7 E10 with your real edges) -->
+    <route id="mainRoute" edges="-E20 -E2 E0 -E1 E19"/>
+
+    <!-- Traffic Flow -->
+    <flow id="carFlow"
+          type="car"
+          route="mainRoute"
+          begin="0"
+          end="200"
+          number="50"/>
+
+    <!-- Ambulance -->
+    <vehicle id="ambulance1"
+             type="ambulance"
+             route="mainRoute"
+             depart="20"/>
+
+</routes>

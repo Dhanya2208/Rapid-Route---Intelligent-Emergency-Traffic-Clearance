@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<net version="1.9">
+    <location netOffset="0.00,0.00" convBoundary="0.00,0.00,500.00,0.00"/>
+
+    <!-- Nodes -->
+    <nodes>
+        <node id="n1" x="0.0" y="0.0" type="priority"/>
+        <node id="n2" x="500.0" y="0.0" type="priority"/>
+    </nodes>
+
+    <!-- Edge -->
+    <edges>
+        <edge id="E1" from="n1" to="n2" priority="1" numLanes="1" speed="13.9"/>
+    </edges>
+</net>
